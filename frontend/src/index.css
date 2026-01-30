@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-morph {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-morph-strong {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .neon-text-blue {
+    color: #00D9FF;
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+  }
+  
+  .neon-text-purple {
+    color: #B026FF;
+    text-shadow: 0 0 10px rgba(176, 38, 255, 0.5);
+  }
+  
+  .neon-text-pink {
+    color: #FF006B;
+    text-shadow: 0 0 10px rgba(255, 0, 107, 0.5);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, #00D9FF 0%, #B026FF 50%, #FF006B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
